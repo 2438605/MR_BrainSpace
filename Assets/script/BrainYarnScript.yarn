@@ -1,0 +1,63 @@
+﻿title: BrainYarnScript
+tags:
+---
+Welcome to the Brain Exploration Scene.  #line:0f608f5 
+This scene is designed to help you explore the intricacies of the human brain through interactive storytelling and engaging activities. #line:0caa4a0 
+In this scene, you will embark on a journey through various brain functions, learning about different regions and their roles in our daily lives.#line:0ec70a6 
+You can interact with three main options to navigate through the scene; "Explore", "Functions" and "next Model" #line:043ba04 
+
+--- #line:07f893c 
+
+<<wait  1>>
+Once you press the "Explore" button, the information panel will display the topics you are learning about. As you learn about each specific part of the brain, tick the corresponding box to mark it as completed. #line:0e5b702 
+<<wait  2>>
+Press the "Explore " button to start your journey. #line:0a16a13 
+
+
+--- #line:077d6c5 
+
+<<wait  1>>
+Let's begin by exploring the main regions of your brain! #line:00939f8 
+<<wait 2>>
+
+First, let's look at the left cerebral hemisphere, which is responsible for logical thinking, language processing, and analytical tasks. #line:0cb98de 
+<<highlight_left Script_manager >>
+
+First, let's look at the left cerebral hemisphere. #line:06f7d2c 
+This part of your brain helps you with language, logic, and analytical thinking. #line:01435b0 
+It controls the movement and sensation on the right side of your body. #line:0e79c1e 
+Did you know? Most people use their left hemisphere for language, especially if they're right-handed! #line:07145cd 
+
+<<wait 2>>
+<<highlight_right Script_manager >>
+Now, let's move to the right cerebral hemisphere. #line:08ef98a 
+This side is great for creativity, spatial awareness, and understanding emotions. #line:0439a12 
+It helps you recognize faces and interpret non-verbal cues, like sarcasm. #line:04a7d5e 
+The right hemisphere controls the left side of your body and is excellent at seeing the big picture. #line:01f5307 
+
+<<wait 2>>
+<<highlight_cerebellum Script_manager >>
+Finally, let's discover the cerebellum. #line:0c4ad23 
+The cerebellum is located at the lower back of your brain. #line:05f6653 
+It keeps your movements smooth and coordinated, helps you balance, and even assists with learning new motor skills. #line:0127a66 
+Despite its small size, the cerebellum is packed with neurons and is vital for most physical activities. #line:0d49a44 
+
+<<wait 2>>
+As you learn about each part, remember to tick the boxes to mark them as completed! #line:066a1c6 
+
+--- #line:0f108b3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===
