@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Scenechange : MonoBehaviour
+public class SceneChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Name of the scene you want to load
+    public string sceneToLoad;
 
-    // Update is called once per frame
-    void Update()
+    // This method can be called from a UI button
+    public void ChangeScene()
     {
-        
+        if (!string.IsNullOrEmpty(sceneToLoad))
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
+        else
+        {
+            Debug.LogWarning("Scene name is not set in the inspector.");
+        }
     }
 }

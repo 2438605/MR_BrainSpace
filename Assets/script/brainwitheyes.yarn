@@ -1,0 +1,122 @@
+﻿title: brainwitheyes
+tags:
+---
+
+<<declare $explained = false>>
+<<set $explained = false>>
+Welcome to the 3D brain Explorer !
+
+Would you like to explore the brain in 3D ?
+->Yes, let's go!  
+<<jump ExplainEyes>>
+->No
+
+===
+
+title: ExplainEyes
+tags:
+---
+
+<<highlight_eyes Script_manager>> >>
+Here are the "Eyes" - responsile for vision and visual processing. They are essential for interpreting the world around us. 
+
+They send signals through the optic nerve to the brain, allowing us to see and understand our environment.
+
+->Continue 
+<<jump ExplainOpticNerve>>
+===
+
+title: ExplainOpticNerve
+tags:
+---
+<<highlight_center Script_manager>>
+The "Optic Nerve" is the pathway that carries visual information from the eyes to the brain. It plays a crucial role in how we perceive light, color, and movement.
+It connects the retina in the eye to the visual cortex in the brain, enabling us to process and interpret what we see.
+
+These "optic nerves" are part of the second cranial nerve pair. 
+
+They merge at a point called the "optic chiasm," where some nerve fibers cross over to the opposite side of the brain. This crossing allows for binocular vision, which is essential for depth perception and a wide field of view.
+
+->Continue
+<<jump ExplainCranialNerves>>
+
+===
+
+title: ExplainCranialNerves
+tags:
+---
+<<highlight_eyes Script_manager>>
+The "purple and orange tubes" represent other "cranial nerves", like the "oculomotor nerve" or "trigeminal nerve".
+
+They handle things like eye movement, facial sensations, and more.
+
+->Continue
+<<jump ExplainThalamus>>
+===
+
+title: ExplainThalamus
+tags:   
+---
+<<highlight_eyes Script_manager>>
+The "Thalamus" is a key relay station in the brain, processing and transmitting sensory information to the appropriate areas for further processing.
+It acts as a hub for sensory signals, ensuring that the brain receives and interprets information from the environment accurately.
+
+The dome-like structure inside the brain is the "Thalamus".
+It is located deep within the brain and is involved in regulating consciousness, sleep, and alertness. The thalamus plays a crucial role in filtering and relaying sensory information to the cerebral cortex, allowing us to perceive and respond to our surroundings.
+Right below the thalamus is the "Hypothalamus", which regulates essential functions like temperature, hunger, and thirst.
+
+->Continue
+<<jump explainCerebellum>>
+
+===
+title: explainCerebellum
+tags:
+---
+<<highlight_lowerbrain Script_manager>>
+
+That brown, "cerebellum" structure at the back of the brain is responsible for coordination, balance, and fine motor skills.
+It helps us perform smooth and precise movements, making it essential for activities like walking, writing, and playing sports.
+The cerebellum is also involved in motor learning, allowing us to improve our skills through practice and repetition.
+
+->Continue
+<<jump explainBrainstem>>
+===
+
+title: explainBrainstem
+tags:
+---
+<<highlight_redpart Script_manager>>
+The "Brainstem" is the vital connection between the brain and the spinal cord, controlling essential functions like breathing, heart rate, and blood pressure.
+It regulates basic life-sustaining processes and serves as a pathway for communication between the brain and the rest of the body.
+The brainstem is located at the base of the brain, connecting it to the spinal cord. It consists of three main parts, the midbrain, pons, and medulla oblongata. The brainstem plays a crucial role in regulating autonomic functions, such as heart rate and respiration, and is essential for maintaining overall bodily functions.
+
+It control vital functions like breathing, heart rate, and blood pressure.
+
+-> finish
+<<jump Answer>>
+===
+
+title: Answer
+tags:
+---
+you may see the circular buttons in blue numbered from 1 to 5. Point towards each button and  press for a drop down menu to appear. 
+Once the menu appears, select an option to indicating the part it refers to.
+This should form to be your understanding about parts of brain.
+
+<<jump finish>>
+===
+
+title: finish
+tags:
+---
+Congratulations! You have completed the 3D brain exploration.
+You have learned about the key structures and functions of the brain, including the eyes, optic nerve, cranial nerves, thalamus, cerebellum, and brainstem.
+Feel free to explore more or revisit any part of the brain you found interesting.
+<<set $explained = true>>
+-> Restart
+<<jump brainwitheyes>>
+-> Exit
+<<stop>>
+
+===
+

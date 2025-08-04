@@ -1,25 +1,59 @@
 using Yarn.Unity;
 using UnityEngine;
 
-public class YarnHighlighter : MonoBehaviour
+public class Yarncommands : MonoBehaviour
 {
-    public BrainPartHighlighter highlighter;
+    public DialogueRunner DialogueRunner;
+    public GameObject highlight_left, highlight_right, highlight_cerebellum, highlight_eyes, highlight_redpart, highlight_lowerbrain, highlight_center;
+
+    public Yarncommands yarncommands;
 
     [YarnCommand("highlight_left")]
-    public void HighlightLeftCommand()
+    public void Highlightleft()
     {
-        highlighter.HighlightLeft();
+        highlight_left.SetActive(true);
     }
 
-    [YarnCommand("highlight_right")]
-    public void HighlightRightCommand()
+    [YarnCommand("Highlightright")]
+
+    public void Highlightright()
     {
-        highlighter.HighlightRight();
+        highlight_right.SetActive(true);
     }
 
     [YarnCommand("highlight_cerebellum")]
-    public void HighlightCerebellumCommand()
+
+    public void HighlightCerebellum()
     {
-        highlighter.HighlightCerebellum();
+        highlight_cerebellum.SetActive(true);
     }
+
+    [YarnCommand("highlight_eyes")]
+
+    public void Highlighteyes()
+    {
+        highlight_eyes.SetActive(true);
+    }
+
+    [YarnCommand("highlight_redpart")]
+
+    public void highlightredpart()
+    {
+        highlight_redpart.SetActive(true);
+    }
+
+    [YarnCommand("highlight_lowerbrain")]
+
+    public void highlightlowerbrain()
+    {
+        highlight_lowerbrain.SetActive(true);
+    }
+
+    [YarnCommand("highlight_center")]
+
+    public void highlightcentre()
+    {
+        highlight_center.SetActive(true);
+    }
+
 }
