@@ -1,27 +1,35 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlacementZone : MonoBehaviour
 {
-    public string correctTag; // The tag of the correct brain part
+    public string correctTag; // Set this in the Inspector
     private bool isFilled = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isFilled && other.CompareTag(correctTag))
+        if (isFilled) return;
+
+        // Check if the object has the correct tag
+        if (other.CompareTag(correctTag))
         {
-            // Snap to zone position
+            // Snap into place
             other.transform.position = transform.position;
             other.transform.rotation = transform.rotation;
 
-            // Prevent further dragging
-            Destroy(other.GetComponent<DraggablePart>());
+            // Optional: Disable XR grabbing so it stays put
+            var grab = other.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
+            if (grab) grab.enabled = false;
 
-            // Add to score
+            // Add point
             ScoreManager.Instance.AddPoint();
-            Debug.Log("Correctly placed: " + correctTag);
+            Debug.Log("Correct placement: " + other.name);
 
             isFilled = true;
         }
+        else
+        {
+            Debug.Log("Wrong part placed: " + other.name);
+        }
     }
 }
+
