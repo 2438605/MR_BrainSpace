@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Test
+  - cerebellum
+  - right cerebral
+  - left cerebral
   layers:
   - Default
   - TransparentFX
